@@ -1,0 +1,92 @@
+/* Element Selector */
+h1, h2 {
+    color: darkred;
+    font-family: "Georgia", serif;
+}
+p {
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Class Selector */
+.highlight {
+    background-color: lightblue;
+    font-weight: bold;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+/* ID Selector */
+#main-title {
+    color: darkgreen;
+    text-decoration: overline;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+/* Grouping Selector */
+h2, p, li {
+    border: 2px dotted #ccc;
+    padding: 8px;
+    margin: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Descendant Selector */
+div p {
+    color: darkorange;
+    font-style: italic;
+}
+
+/* Child Selector */
+div > ul > li {
+    color: teal;
+    font-size: 18px;
+}
+
+/* Attribute Selector */
+input[type="text"] {
+    border: 2px solid darkgreen;
+    background-color: #f0fff0;
+    padding: 4px;
+}
+input[type="password"] {
+    border: 2px solid darkorange;
+    background-color: #fffaf0;
+    padding: 4px;
+}
+input[type="submit"] {
+    background-color: skyblue;
+    border: 1px solid navy;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Pseudo-classes */
+a:hover {
+    color: darkviolet;
+    text-decoration: underline;
+}
+ul li:first-child {
+    background-color: #eef;
+}
+ul li:last-child {
+    background-color: #ffe;
+    font-style: italic;
+}
+
+/* Pseudo-elements */
+h1::before {
+    content: ">> ";
+    color: crimson;
+}
+h1::after {
+    content: " <<";
+    color: crimson;
+}
+p::first-letter {
+    font-size: 26px;
+    color: darkblue;
+    font-weight: bold;
+}
