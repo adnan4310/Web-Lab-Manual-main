@@ -63,30 +63,4 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-/* Pseudo-classes */
-a:hover {
-    color: darkviolet;
-    text-decoration: underline;
-}
-ul li:first-child {
-    background-color: #eef;
-}
-ul li:last-child {
-    background-color: #ffe;
-    font-style: italic;
-}
 
-/* Pseudo-elements */
-h1::before {
-    content: ">> ";
-    color: crimson;
-}
-h1::after {
-    content: " <<";
-    color: crimson;
-}
-p::first-letter {
-    font-size: 26px;
-    color: darkblue;
-    font-weight: bold;
-}
