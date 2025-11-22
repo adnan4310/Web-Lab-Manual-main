@@ -1,0 +1,105 @@
+/* ---------------- Heading Styles Matching Your Example ---------------- */
+.web {
+    text-align: center;
+    color: rgb(8, 8, 121);
+}
+
+.course {
+    text-align: center;
+    color: rgb(78, 78, 96);
+}
+
+.Semester {
+    text-align: center;
+    color: rgb(18, 18, 22);
+}
+
+.Name, .Reg {
+    text-align: center;
+    color: black;
+}
+
+.profile {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.profile img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* ---------------- Global Styles ---------------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    line-height: 1.5;
+    background-color: antiquewhite;
+}
+
+/* ---------------- Desktop Container ---------------- */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: 20px;
+    background: white;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+#desktopList li {
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+/* align-self on desktop last item */
+#desktopList li:last-child {
+    align-self: flex-end;
+    color: darkblue;
+    font-weight: bold;
+}
+
+/* ---------------- Mobile Container ---------------- */
+.mcontainer {
+    display: none;
+    background: aqua;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 350px;
+    margin: auto;
+}
+
+#mobileList li {
+    background: lightblue;
+    padding: 10px;
+    margin: 6px 0;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+/* align-self in mobile view */
+#mobileList li:last-child {
+    align-self: center;
+    font-weight: bold;
+}
+
+/* ---------------- Media Query ---------------- */
+@media (max-width: 480px) {
+
+    body {
+        background-color: #ccffff;
+    }
+
+    .container {
+        display: none;
+    }
+
+    .mcontainer {
+        display: flex;
+        flex-direction: column;
+    }
+}
