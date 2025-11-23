@@ -1,0 +1,100 @@
+/* ============================================
+   HEADER STYLES (YOUR REQUEST)
+   ============================================ */
+.web{
+    text-align: center;
+    color: rgb(8, 8, 121);
+}
+.Name{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.Reg{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.profile {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* ============================================
+   QUIZ APP STYLES
+   ============================================ */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column; /* header + quiz stack properly */
+    align-items: center;
+}
+
+.screen {
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;   /* FIXED — must be column */
+    gap: 15px;
+}
+
+.hidden { display: none; }
+.active { display: flex; }
+
+.btn {
+    padding: 12px 20px;
+    background: #2c3e50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #1a242f;
+}
+
+/* ============================================
+   SIDE-BY-SIDE OPTIONS (Your Requirement)
+   ============================================ */
+
+#optionsContainer {
+    display: flex;
+    flex-wrap: wrap;          /* Allow next row */
+    justify-content: center;
+    gap: 12px;
+}
+
+.optionBtn {
+    width: 48%;               /* TWO PER ROW */
+    padding: 12px;
+    background: white;
+    border: 2px solid #333;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.optionBtn.correct {
+    background: #4caf50;
+    color: white;
+}
+
+.optionBtn.wrong {
+    background: #e74c3c;
+    color: white;
+}
+
+/* Mobile view: stack vertically */
+@media (max-width: 480px) {
+    .screen {
+        max-width: 90%;
+        padding: 15px;
+    }
+    .optionBtn {
+        width: 100%;
+    }
+}
