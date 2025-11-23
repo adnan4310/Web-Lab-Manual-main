@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="a3.css">
+    
+</head>
+
+<body>
+
+    <!-- ************ HEADER SECTION ************ -->
+    <h1 class="web">Web Technologies Assignment 3</h1>
+    <div class="profile">
+        <h4 class="Name">Name : <u>Adnan Ejaz</u></h4>
+        <h4 class="Reg">Registration ID : <u>FA22-BCE-006</u></h4>
+        <hr>
+    </div>
+    <!-- ************ END OF HEADER ************ -->
+
+    <!-- Welcome Screen -->
+    <div id="welcomeScreen" class="screen active">
+        <h2>Welcome to the Quiz App</h2>
+        <button onclick="startQuiz()" class="btn">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quizScreen" class="screen hidden">
+        <h2 id="questionText"></h2>
+
+        <div id="optionsContainer"></div>
+
+        <button onclick="nextQuestion()" id="nextBtn" class="btn hidden">Next</button>
+    </div>
+
+    <!-- Result Screen -->
+    <div id="resultScreen" class="screen hidden">
+        <h1>Your Score: <span id="finalScore"></span></h1>
+        <h2 id="finalMessage"></h2>
+        <button onclick="restartQuiz()" class="btn">Restart Quiz</button>
+    </div>
+
+<script src="a3.js"></script>
+</body>
+</html>
