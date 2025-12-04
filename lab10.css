@@ -1,0 +1,33 @@
+.form-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    background: #797979;
+    color: white;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #383838;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.highlight {
+    background: #c8ffc8;
+}
